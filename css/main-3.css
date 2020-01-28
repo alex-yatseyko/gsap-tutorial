@@ -13,7 +13,16 @@ body {
 
 .color {
   position: absolute;
-  font-size: 23rem;
-  opacity: .3;
+  font-size: 27rem;
+  opacity: .17;
   top: -8%;
+}
+
+.pink {
+  background: #ea0056;
+}
+
+.yellow {
+  background: #e3e0b5;
+  min-height: 300px;
 }
