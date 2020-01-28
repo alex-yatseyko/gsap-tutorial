@@ -1,0 +1,7 @@
+body {
+  height: 100%;
+  margin: 0;
+  display: grid;
+  grid-template-columns: auto 30%;
+  font-family: 'Montserrat';
+}
