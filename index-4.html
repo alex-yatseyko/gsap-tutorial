@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="first-circle"></div>
+    <h2 class="title">Зробити макет</h2>
+    <h3>Договірна</h3>
+
+    <h4>Треба створити відео макет для реклами</h4>
+</body>
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+<script>
+    const tl = gsap.timeline({defaults: {duration: 1}})
+
+    tl.from(".first-circle", {
+        // y: -50, 
+        // stagger: .6, 
+        // opacity: 0,
+        // transform: scale(1.5)
+        // width: 600,
+        // height: 600,
+    })
+        .to(".first-circle", .3, {
+            // width: 1500, 
+            // height: 1500, 
+            // left: -90 ,
+            scale: 120
+        })
+        .from('.title', {
+            scale: 0, 
+        })
+</script>
+<style>
+    body {
+        margin: 0;
+        background: linear-gradient(to right, #b3ffab, #12fff7);
+        width: 100vw;
+        height: 100vh;
+    }
+    .first-circle {
+        background-color: #2a292f;
+        /* transform: scale(120); */
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        margin: auto;
+        right: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        border-radius: 150%;
+    }
+    h1, h2, h3, h4, h5, h6, p {
+        color: white;
+    }
+    .title {
+        position: absolute;
+        top: 150px;
+        left: 100px;
+        transform: scale(1)
+    }
+</style>
+</html>
